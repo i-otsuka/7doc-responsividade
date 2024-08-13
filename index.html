@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Consultas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="assets/perfil-1.jpg" alt="Foto de perfil do médico">
+        <div class="cabecalho__descricao">
+            <h1 class="cabecalho__descricao__titulo">Olá, Sônia</h1>
+            <p class="cabecalho__descricao__texto">Mais 4 consultas hoje</p>
+        </div>
+    </header>
+    <main class="agenda">
+        <!--Lista do dia-->
+        <section class="agenda__dia">
+            <h2 class="agenda__dia__titulo">Hoje</h2>
+
+            <!--Card consulta 1-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0001" checked>
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-2.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Luciana Dias</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">14:00 - 15:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 2-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0002">
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-3.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Larissa Santana</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">16:00 - 17:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 3-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0003" checked>
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-4.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Marcos Correia</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr class="card__consulta__divisao">
+                <h4 class="card__consulta__horario">17:20 - 18:00 (40 minutos)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Lista do dia-->
+        <section class="agenda__dia">
+            <h2 class="agenda__dia__titulo">Amanhã</h2>
+
+            <!--Card consulta 4-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0004">
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-5.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Clara Lemos</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">18:00 - 19:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 5-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0005" checked>
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-2.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Luciana Dias</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">14:00 - 15:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 6-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0006" checked>
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-4.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Marcos Correia</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr class="card__consulta__divisao">
+                <h4 class="card__consulta__horario">17:20 - 18:00 (40 minutos)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 7-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0007">
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-3.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Larissa Santana</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr class="card__consulta__divisao">
+                <h4 class="card__consulta__horario">16:00 - 17:00 - (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Lista do dia-->
+        <section class="agenda__dia">
+            <h2 class="agenda__dia__titulo">Quarta-feira</h2>
+
+            <!--Card consulta 8-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0008">
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-5.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Clara Lemos</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">18:00 - 19:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 9-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0009" checked>
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-2.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Luciana Dias</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">14:00 - 15:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 10-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0010" checked>
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-4.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Marcos Correia</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr class="card__consulta__divisao">
+                <h4 class="card__consulta__horario">17:20 - 18:00 (40 minutos)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Card consulta 11-->
+            <div class="card__consulta">
+                <input class="consulta__checkbox-remota" type="checkbox" name="tipo-consulta" id="consulta0011">
+                <div class="paciente">
+                    <img class="paciente__foto" src="assets/perfil-3.jpg" alt="Foto de perfil do paciente">
+                    <h3 class="paciente__nome">Larissa Santana</h3>
+                    <ul class="tipo-consulta">
+                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
+                            remota</li>
+                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                    </ul>
+                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                </div>
+                <hr>
+                <h4 class="card__consulta__horario">16:00 - 17:00 (1 hora)</h4>
+                <ul class="card__consulta__botoes">
+                    <li class="card__consulta__botoes__remoto">
+                        <button class="botao__video" type="button">Ligar por vídeo</button>
+                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                    </li>
+                    <li class="card__cosulta__botoes__local">
+                        <button class="botao__local" type="button">Ver endereço</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

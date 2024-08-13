@@ -14,6 +14,46 @@
 </head>
 
 <body>
+    <!-- MENUS -->
+    <nav class="menu">
+        <!-- Menu principal -->
+        <ul class="menu__principal">
+            <li class="menu__item"><a class="menu__link menu--atual" href="#"><img
+                        src="assets/calendario-icone-ativo.svg" alt="Ícone botão calendário"
+                        class="menu__link__imagem"><span>Consultas</span></a></li>
+            <li class="menu__item"><a class="menu__link menu--nao-atual" href="#"><img src="assets/clientes-icone.svg"
+                        alt="Ícone botão clientes" class="menu__link__imagem"><span>Clientes</span></a></li>
+            <li class="menu__item"><a class="menu__link menu--nao-atual" href="#"><img src="assets/relatorios-icone.svg"
+                        alt="Ícone botão relatórios" class="menu__link__imagem"><span>Relatórios</span></a></li>
+            <li class="menu__item"><a class="menu__link menu--nao-atual" href="#"><img src="assets/menu-icone.svg"
+                        alt="Ícone botão menu" class="menu__link__imagem"><span>Menu</span></a></li>
+        </ul>
+
+        <!-- Menu flutuante-->
+        <div class="menu__flutuante">
+            <input type="checkbox" class="menu__flutuante__estado" id="menu__flutuante__estado">
+            <label for="menu__flutuante__estado">
+                <span class="menu__flutuante__botao botao__flutuante">
+                    <img src="assets/mais-icone.svg" alt="Icone botão adicionar">
+                </span>
+            </label>
+            <ul class="menu__flutuante__lista">
+                <li class="menu__flutuante__item">
+                    <a href="#" class="menu__flutuante__botao">
+                        <img src="assets/camera-fab-icone.svg" alt="Ícone nova chamada de video">
+                    </a href="#">
+                    <span class="menu__flutuante__rotulo">Nova consulta por vídeo</span>
+                </li>
+                <li class="menu__flutuante__item">
+                    <a href="#" class="menu__flutuante__botao">
+                        <img src="assets/pin-fab-icone.svg" alt="Ícone nova consulta">
+                    </a href="#">
+                <span class="menu__flutuante__rotulo">Nova consulta na casa do paciente</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CABECALHO -->
     <header class="cabecalho">
         <img class="cabecalho__imagem" src="assets/perfil-1.jpg" alt="Foto de perfil do médico">
         <div class="cabecalho__descricao">
@@ -21,6 +61,8 @@
             <p class="cabecalho__descricao__texto">Mais 4 consultas hoje</p>
         </div>
     </header>
+
+    <!-- AGENDA -->
     <main class="agenda">
         <!--Lista do dia-->
         <section class="agenda__dia">
@@ -33,9 +75,8 @@
                     <img class="paciente__foto" src="assets/perfil-2.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Luciana Dias</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -59,9 +100,8 @@
                     <img class="paciente__foto" src="assets/perfil-3.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Larissa Santana</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -85,9 +125,8 @@
                     <img class="paciente__foto" src="assets/perfil-4.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Marcos Correia</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -116,9 +155,8 @@
                     <img class="paciente__foto" src="assets/perfil-5.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Clara Lemos</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -142,9 +180,8 @@
                     <img class="paciente__foto" src="assets/perfil-2.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Luciana Dias</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -168,9 +205,8 @@
                     <img class="paciente__foto" src="assets/perfil-4.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Marcos Correia</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -194,9 +230,8 @@
                     <img class="paciente__foto" src="assets/perfil-3.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Larissa Santana</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -225,9 +260,8 @@
                     <img class="paciente__foto" src="assets/perfil-5.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Clara Lemos</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -251,9 +285,8 @@
                     <img class="paciente__foto" src="assets/perfil-2.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Luciana Dias</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -277,9 +310,8 @@
                     <img class="paciente__foto" src="assets/perfil-4.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Marcos Correia</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>
@@ -303,9 +335,8 @@
                     <img class="paciente__foto" src="assets/perfil-3.jpg" alt="Foto de perfil do paciente">
                     <h3 class="paciente__nome">Larissa Santana</h3>
                     <ul class="tipo-consulta">
-                        <li class="tipo-consulta--remota"><img src="assets/camera.svg" alt="icone camera">Consulta
-                            remota</li>
-                        <li class="tipo-consulta--local"><img src="assets/pin.svg" alt="icone local">Consulta local</li>
+                        <li class="tipo-consulta--remota">Consulta remota</li>
+                        <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
                     <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
                 </div>

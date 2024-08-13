@@ -25,6 +25,10 @@
     color:var( --cor-texto-2);
 }
 
+.agenda{
+    margin-bottom: 4.6rem;
+}
+
 .agenda__dia{
     padding: 0 1rem;
 }

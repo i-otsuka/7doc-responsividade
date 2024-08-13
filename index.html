@@ -13,6 +13,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- 
+
+# BOTÕES OU ANCORAS
+
+## Chat Paciente:
+    
+    ### Usando botões <button></button>:
+        <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+
+    ### Com ancoras <a></a>
+        <a class="paciente__chat" href="#"><img src="assets/chat1.svg" alt=""></a>
+
+## Ligar pos áudio, Ligar por vídeo e Ver endereço:
+
+    ### Com botões <button></button>:
+        <li class="card__consulta__botoes__remoto">
+            <button class="botao__video" type="button">Ligar por vídeo</button>
+            <button class="botao__audio" type="button">Ligar por áudio</button>
+        </li>
+        <li class="card__cosulta__botoes__local">
+            <button class="botao__local" type="button">Ver endereço</button>
+        </li>
+    
+    ### Com ancoras <a></a>
+        <li class="card__consulta__botoes__remoto">
+            <a class="botao__video" href="#">Ligar por vídeo</a>
+            <a class="botao__audio" href="#">Ligar por áudio</a>
+        </li>
+        <li class="card__cosulta__botoes__local">
+            <a class="botao__local" href="#">Ver endereço</a>
+        </li>
+-->
+
 <body>
     <!-- MENUS -->
     <nav class="menu">
@@ -41,14 +74,15 @@
                 <li class="menu__flutuante__item">
                     <a href="#" class="menu__flutuante__botao">
                         <img src="assets/camera-fab-icone.svg" alt="Ícone nova chamada de video">
-                    </a href="#">
+                    </a>
                     <span class="menu__flutuante__rotulo">Nova consulta por vídeo</span>
                 </li>
                 <li class="menu__flutuante__item">
                     <a href="#" class="menu__flutuante__botao">
                         <img src="assets/pin-fab-icone.svg" alt="Ícone nova consulta">
-                    </a href="#">
-                <span class="menu__flutuante__rotulo">Nova consulta na casa do paciente</span></li>
+                    </a>
+                    <span class="menu__flutuante__rotulo">Nova consulta na casa do paciente</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -78,17 +112,17 @@
                         <li class="tipo-consulta--remota">Consulta remota</li>
                         <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
-                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                    <a class="paciente__chat" href="#"><img src="assets/chat1.svg" alt=""></a>
                 </div>
                 <hr>
                 <h4 class="card__consulta__horario">14:00 - 15:00 (1 hora)</h4>
                 <ul class="card__consulta__botoes">
                     <li class="card__consulta__botoes__remoto">
-                        <button class="botao__video" type="button">Ligar por vídeo</button>
-                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                        <a class="botao__video" href="#">Ligar por vídeo</a>
+                        <a class="botao__audio" href="#">Ligar por áudio</a>
                     </li>
                     <li class="card__cosulta__botoes__local">
-                        <button class="botao__local" type="button">Ver endereço</button>
+                        <a class="botao__local"  href="#">Ver endereço</a>
                     </li>
                 </ul>
             </div>
@@ -103,17 +137,17 @@
                         <li class="tipo-consulta--remota">Consulta remota</li>
                         <li class="tipo-consulta--local">Consulta local</li>
                     </ul>
-                    <button class="paciente__chat" type="button"><img src="assets/chat1.svg" alt=""></button>
+                    <a class="paciente__chat" href="#"><img src="assets/chat1.svg" alt=""></a>
                 </div>
                 <hr>
                 <h4 class="card__consulta__horario">16:00 - 17:00 (1 hora)</h4>
                 <ul class="card__consulta__botoes">
                     <li class="card__consulta__botoes__remoto">
-                        <button class="botao__video" type="button">Ligar por vídeo</button>
-                        <button class="botao__audio" type="button">Ligar por áudio</button>
+                        <a class="botao__video" href="#">Ligar por vídeo</a>
+                        <a class="botao__audio" href="#">Ligar por áudio</a>
                     </li>
                     <li class="card__cosulta__botoes__local">
-                        <button class="botao__local" type="button">Ver endereço</button>
+                        <a class="botao__local" href="#">Ver endereço</a>
                     </li>
                 </ul>
             </div>

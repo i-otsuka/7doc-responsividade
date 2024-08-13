@@ -83,6 +83,9 @@
     border-radius: 1rem;
 }
 
+.menu__flutuante__estado{
+    display: none;
+}
 .menu__flutuante__estado:checked ~ .menu__flutuante__lista{
     display: flex;
 }

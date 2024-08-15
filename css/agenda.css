@@ -49,7 +49,7 @@
     }
     .agenda__dia__consultas{
         display: grid;
-        grid-template-columns:  repeat(2, minmax(390px, 1fr));
+        grid-template-columns:  1fr 1fr;
         gap: 2rem;
         align-items: center;
     }

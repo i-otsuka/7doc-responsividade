@@ -26,15 +26,58 @@
 }
 
 .agenda{
-    margin-bottom: 4.6rem;
+    padding: 0 1rem;
+    margin:0 auto 4.6rem auto;
 }
 
-.agenda__dia{
-    padding: 0 1rem;
+.agenda__dia__consultas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .agenda__dia__titulo{
     font-weight: 700;
     color:var(--cor-texto-1);
     padding: 1rem 0;
+}
+
+@media only screen and (min-width: 768px){
+    .agenda{
+        padding: 0 2rem;
+    }
+    .agenda__dia__consultas{
+        display: grid;
+        grid-template-columns:  repeat(2, minmax(390px, 1fr));
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    .agenda__dia__consultas{
+        padding: 0.5rem 2.5% 1rem;
+    }
+
+    .cabecalho__imagem{
+        width: 6rem;
+        margin-right: 1.5rem;
+    }
+    
+    .cabecalho__descricao__titulo{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .cabecalho__descricao__texto{
+        font-size:1.125rem ;
+    }
+    
+    .agenda__dia__consultas{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(390px, 1fr));
+
+    }
 }

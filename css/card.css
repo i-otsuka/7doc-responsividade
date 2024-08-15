@@ -5,6 +5,9 @@
     border-radius: 0.5rem;
     padding: 1rem 0;
     margin-bottom: 1rem;
+    width: 100%;
+    max-width: 500px;
+    flex-grow: 1;
 }
 
 .consulta__checkbox-remota{
@@ -37,6 +40,7 @@
     height: 1rem;
     padding-left: 1.5rem;
 }
+
 .consulta__checkbox-remota:checked ~ .paciente>.tipo-consulta>.tipo-consulta--local{
     display: none;
 }
@@ -89,7 +93,7 @@
 
 .card__consulta__horario{
     margin:1rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--cor-texto-1)
 }
@@ -145,4 +149,21 @@
     border: none;
     color: var(--cor-bg-1);
     box-shadow: 0 4px 4px rgba(72, 148, 255, 0.35);
+}
+
+@media only screen and (min-width: 1200px){
+
+    .paciente__nome{
+        font-size: 1.125rem;
+    }
+
+    .card__consulta__horario{
+        font-size: 0.85rem;
+    }
+
+    .botao__audio, .botao__video, .botao__local{
+        font-size: 1rem;
+    }
+
+
 }

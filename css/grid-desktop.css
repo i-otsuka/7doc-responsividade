@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1200px){
+    body{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+        "nav header"
+        "nav main";
+    }
+    .menu{
+        grid-area: nav;
+    }
+
+    .cabecalho{
+        grid-area: header;
+    }
+
+    .agenda{
+        grid-area: main;
+    }
+
+}
+

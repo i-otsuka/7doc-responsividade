@@ -50,14 +50,20 @@
     .agenda__dia__consultas{
         display: grid;
         grid-template-columns:  1fr 1fr;
-        gap: 2rem;
+        gap: 1rem;
         align-items: center;
     }
 }
 
 @media only screen and (min-width: 1200px){
 
+    .agenda{
+        padding: 0;
+        margin:2rem;
+    }
     .agenda__dia__consultas{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(320px, 1fr));
         padding: 0.5rem 2.5% 1rem;
     }
 
@@ -75,9 +81,4 @@
         font-size:1.125rem ;
     }
     
-    .agenda__dia__consultas{
-        display: grid;
-        grid-template-columns: repeat(3, minmax(390px, 1fr));
-
-    }
 }

@@ -16,13 +16,13 @@
 .cabecalho__descricao__titulo{
     font-size: 1.4rem;
     font-weight: 700;
-    color: var( --cor-texto-1);
+    color: var(--color-gray1);
     margin-bottom: 0.5rem;
 }
 
 .cabecalho__descricao__texto{
     font-size:0.85rem ;
-    color:var( --cor-texto-2);
+    color:var(--color-gray2);
 }
 
 .agenda{
@@ -39,7 +39,7 @@
 
 .agenda__dia__titulo{
     font-weight: 700;
-    color:var(--cor-texto-1);
+    color:var(--color-gray1);
     padding: 1rem 0;
 }
 

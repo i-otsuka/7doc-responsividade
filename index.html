@@ -404,6 +404,39 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Formulário de cadastro de novas consultas -->
+        <section class="nova-consulta__container">
+            <h2 class="nova-consulta__titulo">Adicionar nova consulta</h2>
+            <form class="nova-consulta__form" action="#">
+                <div class="nova-consulta__form__nome form__campo">
+                    <label for="paciente_nome"> Nome do paciente:</label>
+                    <input type="text" name="paciente_nome" id="paciente_nome" required>
+                </div>
+                <div class="nova-consulta__form__tipo form__campo">
+                    <label for="consulta__tipo">Tipo de consulta:</label>
+                    <select name="consulta__tipo" id="consulta__tipo" required>
+                        <option class="consulta__tipo__vazia" value="" disabled selected >Selecione uma forma</option>
+                        <option value="Consulta local">Consulta local</option>
+                        <option value="Consulta remota">Consulta remota</option>
+                    </select>
+                </div>
+                <div class="nova-consulta__form__data form__campo">
+                    <label for="consulta__data">Data:</label>
+                    <input type="date" name="consulta__data" id="consulta__data" required>
+                </div>
+                <div class="nova-consulta__form__hora form__campo">
+                    <label for="consulta__horario">Hora:</label>
+                    <input type="time" name="consulta__horario" id="consulta__horario" required>
+                </div>
+                <div class="nova-consulta__form__observacoes form__campo">
+                    <label for="consulta__observacoes">Observações:</label>
+                    <textarea name="consulta__observacoes" id="consulta__observacoes" required></textarea>
+                </div>
+                <button class="nova-consulta__form__botao" type="submit">Salvar Consulta</button>
+
+            </form>
+        </section>
     </main>
 </body>
 

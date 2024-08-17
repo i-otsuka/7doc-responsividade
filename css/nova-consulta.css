@@ -1,0 +1,107 @@
+.nova-consulta__container{
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .nova-consulta__container {
+        display: block;
+    }
+
+    .nova-consulta__titulo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color-gray1);
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .nova-consulta__form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        background-color: var(--color-white);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 0.5rem 2.5% 1rem;
+    }
+
+    .form__campo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form__campo input,
+    .form__campo textarea,
+    .form__campo select {
+        padding: 1rem 0.5rem;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-gray2);
+        border-radius: 0.25rem;
+        color: var(--color-gray1);
+        font-size: 1rem;
+        box-shadow: inset 1px 1px 2px var(--color-shadow3);
+    }
+
+    .form__campo input:focus,
+    .form__campo textarea:focus,
+    .form__campo select:focus{
+        border: 1px solid var(--color-theme1);
+    }
+
+    .forms__campo label{
+        color: var(--color-gray1);
+    }
+
+    .nova-consulta__form__nome {
+        grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .nova-consulta__form__tipo {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .consulta__tipo__vazia{
+        display: none;
+    }
+    .nova-consulta__form__tipo option{
+        padding: 1.5rem 0.5rem;
+        color: var(--color-gray1);
+        font-size: 1rem;
+    }
+
+    .nova-consulta__form__data {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .nova-consulta__form__hora {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .nova-consulta__form__observacoes {
+        grid-area: 2 / 3 / 4 / 5;
+    }
+
+    .nova-consulta__form__observacoes textarea {
+        height: 100%;
+    }
+
+    .nova-consulta__form__botao {
+        grid-area: 4 / 4 / 5 / 5;
+        display: block;
+        border-radius: 0.5rem;
+        font-family: var(--fonte-principal);
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        background-color: var(--color-theme1);
+        border: none;
+        color: var(--color-white);
+        box-shadow: 0 4px 4px var(--color-shadow1);
+
+    }
+}

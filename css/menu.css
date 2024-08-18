@@ -116,7 +116,7 @@
         align-items: flex-start;
         justify-content: start;
         gap: 1rem;
-        padding: 2rem 3rem 2rem 2rem;
+        padding: 2rem 2.5rem 2rem 1.5rem;
     }
 
     .menu__link {
@@ -124,6 +124,25 @@
         align-items: center;
         justify-content: space-around;
         gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .menu__link:hover{
+        background-color: var(--color-gray4);
+        border-radius: 0.25rem;
+    }
+
+    .menu__link:active{
+        background-color: var(--color-gray4);
+        border-radius: 0.25rem;
+    }
+
+    .menu__link:active img, .menu__link:active span {        
+        transform: translateY(1px);
+    }
+
+    .menu--nao-atual:hover{
+        opacity: 0.7;
     }
 
     .menu__flutuante{

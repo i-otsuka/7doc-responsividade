@@ -74,7 +74,7 @@
     color:var(--color-gray2);
 }
 
-.paciente__chat{
+.paciente__chat__botao{
     grid-area: 1 / 3 / 3 /4;
     display: flex;
     align-items: center;
@@ -84,11 +84,19 @@
     width: 2rem;
     border-radius: 50%;
     border:none;
-    background-color: var(--cor-bg-4);
+    background-color: var(--color-gray3);
+}
+
+.paciente__chat__botao:hover{
+    background-color: var(--color-gray4);
+}
+
+.paciente__chat__botao:active{
+    transform: translateY(1px);
 }
 
 .card__consulta__divisao{
-    border-top: 2px solid var(--cor-bg-4);
+    border-top: 2px solid var(--color-gray3);
 }
 
 .card__consulta__horario{
@@ -134,8 +142,19 @@
 
 .botao__audio{
     background-color: var(--color-white);
-    border: 2px solid var(--cor-bg-4);
+    border: 2px solid var(--color-gray3);
     color:var(--color-gray1);
+    box-shadow: 0 4px 4px var(--color-shadow4);
+}
+
+.botao__audio:hover{
+    border: 2px solid var(--color-gray4);
+}
+
+.botao__audio:active{
+    background-color: var(--color-gray3);
+    box-shadow: 0 3px 4px var(--color-shadow4);
+    transform: translateY(1px);
 }
 
 .botao__video{
@@ -145,11 +164,31 @@
     box-shadow: 0 4px 4px var(--color-shadow2);
 }
 
+.botao__video:hover{
+    background-color: var(--color-theme2-light);
+}
+
+.botao__video:active{
+    background-color: var(--color-theme2-dark);
+    box-shadow: 0 3px 4px var(--color-shadow2);
+    transform: translateY(1px);
+}
+
 .botao__local{
     background-color: var(--color-theme1);
     border: none;
     color: var(--color-white);
     box-shadow: 0 4px 4px var(--color-shadow1);
+}
+
+.botao__local:hover{
+    background-color: var(--color-theme1-light);
+}
+
+.botao__local:active{
+    background-color: var(--color-theme1-dark);
+    box-shadow: 0 3px 4px var(--color-shadow1);
+    transform: translateY(1px);
 }
 
 @media only screen and (min-width: 1200px){

@@ -56,6 +56,16 @@
     z-index: 99;
 }
 
+.menu__flutuante__botao:hover{
+    background-color: var(--color-theme1-light);
+}
+
+.menu__flutuante__botao:active{
+    background-color: var(--color-theme1-dark);
+    box-shadow: 0 1px 2px  rgba(255, 255, 255, 0.25), 0 3px 4px rgba(72, 148, 255, 0.5);
+    transform: translateY(1px);
+}
+
 .menu__flutuante__lista{
     display:none;
     flex-direction: column-reverse;
